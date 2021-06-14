@@ -16,6 +16,6 @@ app.post("/hook", (req, res) => {
 
 
 app.listen(8040, function () {
-    console.log("Server is runnig on", "http://localhost:8040/")
+    console.log("Server is runnig on:", "http://localhost:8040/")
 });
 
