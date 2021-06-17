@@ -8,11 +8,11 @@ const API_KEY_2_NEWS="78c2fbbc39c140afa466d92ed5f79b85"
 const API_KEY_3_NEWS="2531ba8806204059af4a5e4fe053efde"
 const API_KEY_WEATHER="41ad88a1f768b910e390f99a84773acb"
 const API_KEY_MAPS="AIzaSyC9Mk7AvKHkzPSOffPuLg_HlhzP7wAPGEM"
-const topInternationalHeadLines = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${API_KEY_2_NEWS}&pageSize=1`;
-const topHeadLinesInGermany = `https://newsapi.org/v2/top-headlines?country=de&apiKey=${API_KEY_2_NEWS}&pageSize=3`;
-const businessInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=${API_KEY_2_NEWS}&pageSize=6`;
-const technologyInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=technology&apiKey=${API_KEY_2_NEWS}&pageSize=6`;
-const healthInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=health&apiKey=${API_KEY_2_NEWS}&pageSize=7`;
+const topInternationalHeadLines = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${API_KEY_3_NEWS}&pageSize=1`;
+const topHeadLinesInGermany = `https://newsapi.org/v2/top-headlines?country=de&apiKey=${API_KEY_3_NEWS}&pageSize=3`;
+const businessInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=${API_KEY_3_NEWS}&pageSize=6`;
+const technologyInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=technology&apiKey=${API_KEY_3_NEWS}&pageSize=6`;
+const healthInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=health&apiKey=${API_KEY_3_NEWS}&pageSize=7`;
 
 router.get('/', async (req, res) => {
     try {
@@ -42,7 +42,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-const entertainmentInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=entertainment&apiKey=${API_KEY_2_NEWS}&pageSize=12`;
+const entertainmentInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=entertainment&apiKey=${API_KEY_3_NEWS}&pageSize=12`;
 router.get("/unterhaltung", async (req, res) => {
     try {
         const entertainmentNewsGermany = await axios.get(entertainmentInGermany);
